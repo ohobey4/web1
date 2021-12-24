@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML</title>
+  <meta charset="utf-8">
+<style>
+  body{
+    margin:0;
+  }
+  a {
+    color:black;
+    text-decoration: none;
+  }
+
+    h1 {
+      font-size:45px;
+      text-align: center;
+      margin:0;
+      padding:20px;
+    }
+
+    ol{
+      border-right:1px solid ;
+      border-left:1px solid ;
+      width: 200px;
+      margin:0;
+      padding:20px;
+
+    }
+    #ai{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #ai ol{
+      padding-left:33px
+    }
+    #ai #article{
+      padding-left:10px;
+        text-align: left;
+
+    }
+
+    a{
+      color:black;
+      text-decoration: none;
+
+    }
+    h3{
+      font-size:45px;
+      text-align: center;
+      margin:0;
+      padding:20px;
+    }
+    h2{
+      border-right:1px solid gray;
+      padding: 20px;
+      margin: 0px;
+      text-align: center;
+
+    }
+    #grid{
+      border:1px solid ;
+      display:grid;
+      grid-template-columns: 1.7fr 1.2fr 1.2fr 1.5fr 1fr 1.3fr
+
+    }
+
+    li{
+      font-size:25px;
+    }
+    h4{
+      font-size:26px;
+      text-align: left;
+      padding-left: 100px;
+    }
+    h5{
+      font-size:20px;
+      text-align: left;
+      padding-left: 100px;
+    }
+    #ma{
+
+      margin-left: 300px;
+      margin-right: 300px;
+    }
+
+</style>
+
+</head>
+<body>
+
+<div id="ma">
+    <h3><a href="index.html">인공지능</a></h3>
+  <div id="grid">
+    <h2><a href="a 인공지능이란.html">인공지능이란?</a></h2>
+    <h2><a href="b 역사.html">역사</a></h2>
+    <h2><a href="c 종류.html">종류</a></h2>
+    <h2><a href="d 학습방법.html">학습방법</a></h2>
+    <h2><a href="e 활용.html">활용</a></h2>
+    <h2><a href="f 오해.html">오해</a></h2>
+</div>
+
+<div id="ai">
+  <ol>
+    <li><a href="d-a 머신러닝.html">머신러닝</a></li>
+    <p><a href="d-a-a 머신러닝 분류방법.html">-분류방법</a></p>
+    <p><a href="d-a-b 머신러닝 한계.html">-한계</a></p>
+    <li><a href="d-b 딥러닝.html">딥러닝</a></li>
+  </ol>
+  <div id="article">
+<h4>머신러닝 분류방법</h4>
+
+<h4>최근접 이웃 방법</h4>
+<h5>가장 가까운 이웃(데이터)의 분류를 따르는 방법</h5>
+<h5>ex) 가까운 데이터의 카테고리가 과학이면 가까이 있는 데이터도 과학이라고 판단한 후 분류</h5>
+<br></br>
+<h4>나이즈 배이브법</h4>
+<h5>베이즈의 정리를 사용해 나누는 방법<h5>
+<h5>데이터의 특징마다 어느 카테고리에 들어맞는가에 때한확률들을 곱해 가장 적합한 분류를 찾는다.</h5>
+<h5>ex) 모든 카테고리의 데이터에서 물리학이라는 단어가 포함되는 확률과 과학 카테고리에 물리학 이라는 단어가 포함되는 확률을 비교하여 값(점수)을 주고, 이것을 여러 카테고리에 대하여 확률을 비교한 값(점수)을 구하여 값(점수)가 가장 높은 것을 옳은 분류의 결과로 판정한다.</h5>
+<br></br>
+<h4>결정트리</h4>
+<h5>데이터들에 각 속성들이 포함되어 있는가 아닌가를 기반으로 분류하는 방법</h5>
+<h5>ex) 물리학 이라는 단어가 들어 있는 집합과 들어 있지 않은 집합으로 나누고, 화학이라는 단어가 들어있는 집합과 들어 있지 않은 집합으로 분류하여 물리학과 화학이라는 단어가 동시에 들어있으면 과학 카테고리로 나눌 수 있다.</h5>
+<br></br>
+<h4>서포트 벡터 머신</h4>
+<h5>데이터를 구분 짓는 구분선과 각데이터 그룹간의 마진(간격)을 최대로 해서 데이터를 나누는 방법   <img src='d-a-a 서포트 벡터 머신.jpg'></h5>
+<br></br>
+<h4>뉴럴네트워크</h4>
+<h5>인간의 뉴런의 신호 전달 방법을 모방하여 만든 분류 방법</h5>
+
+<h5>인간의 뇌의 뉴런(신경세포)의 네트워크는 시냅스를 통해 전기 자극을 전달하는데 이때 자극이 임계값을 넘지 못하면 전달되지 않고, 임계값을 넘기면 신호가 전달된다.</h5>
+
+<h5>이 원리를 모방하여 입력값에 가중치를 곱하고 그 합을 시그모이드 함수(온-오프를 수학적으로 취급하기 위한 함수)를 거쳐 출력한다. 학습 과정에서 가중치부여를 변화시켜 최적인 값을 출력하여 조정하며 정밀도를 높인다.</h5>
+
+
+
+    </div>
+</div>
+
+</div>
+</body>
+</html>
